@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AI-World - Mentor Bootstrap Template</title>
+  <meta name="description" content="Explore AI-driven virtual environments, NPCs, and deep learning innovations in VR and AR.">
+  <meta name="keywords" content="AI, virtual assistants, NPCs, deep learning, immersive AI">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll(".counter");
+    
+    counters.forEach(counter => {
+      counter.innerText = "0";
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = target / 100;
+
+        if (count < target) {
+          counter.innerText = `${Math.ceil(count + increment)}`;
+          setTimeout(updateCounter, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  });
+</script>
+
+
+<body class="ai-world-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">VR</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="metaverse.html">Metaverse</a></li>
+          <li><a href="ai-worlds.html" class="active">AI-Worlds</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background text-center">
+      <img src="assets/img/punk.jpg" alt="AI-World" data-aos="fade-in" class="img-fluid">
+      <div class="container">
+        <h2 data-aos="fade-up" data-aos-delay="100" class="text-light">AI-Powered Virtual Environments</h2>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-light">Discover AI-driven NPCs, deep learning algorithms, and self-evolving virtual landscapes that redefine immersion.</p>
+      </div>
+    </section>
+
+    
+  
+    
+    <!-- AI Worlds Section -->
+    <section id="ai-worlds" class="ai-worlds section py-5">
+      <div class="container" data-aos="fade-up">
+        <h3 class="text-center text-primary">The Future of AI in the Metaverse</h3>
+        <p class="text-center">Discover how artificial intelligence is shaping virtual worlds creating lifelike NPCs, evolving digital landscapes, and driving immersive experiences like never before.</p>
+
+        <div class="row g-4">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card shadow-lg border-0 position-relative">
+              <img src="assets/img/bot.jpg" alt="AI NPCs" class="img-fluid">
+              <div class="card-overlay">
+                <h5 class="card-title">AI-Powered NPCs</h5>
+                <p class="card-text">Engage with virtual characters that adapt and respond dynamically through real-time AI intelligence.</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- AI-Generated Environments -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card shadow-lg border-0 position-relative">
+              <img src="assets/img/future.jpg" alt="AI-Generated Worlds" class="card">
+              <div class="card-overlay">
+                <h5 class="card-title">AI-Generated Environments</h5>
+                <p class="card-text">Explore ever-changing landscapes designed through AI-driven procedural generation and deep learning.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI in Gaming & Simulations -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card shadow-lg border-0 position-relative">
+              <img src="assets/img/AIgame.jpg" alt="AI in Gaming" class="card">
+              <div class="card-overlay">
+                <h5 class="card-title">AI in Gaming & Simulations</h5>
+                <p class="card-text">AI is transforming gaming with smart NPCs, adaptive storytelling, and self-learning opponents.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- AI in Social Interaction -->
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card shadow-lg border-0 position-relative">
+              <img src="assets/img/AIsocial.jpg" alt="AI in Social Interaction" class="card">
+              <div class="card-overlay">
+                <h5 class="card-title">AI in Social Interaction</h5>
+                <p class="card-text">AI-driven virtual companions that evolve based on user interaction, creating personalized experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Statistics Section -->
+<section id="ai-stats" class="ai-stats section py-5 text-center">
+  <div class="container" data-aos="fade-up">
+    <h3 class="text-primary mb-4">AI in the Metaverse: Live Stats</h3>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="counter-box shadow-lg p-4">
+          <h2 class="counter text-primary" data-target="2500">0</h2>
+          <p>AI-Powered NPCs</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-box shadow-lg p-4">
+          <h2 class="counter text-primary" data-target="150000">0</h2>
+          <p>Users Engaged with AI</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-box shadow-lg p-4">
+          <h2 class="counter text-primary" data-target="500">0</h2>
+          <p>AI-Generated Worlds</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-box shadow-lg p-4">
+          <h2 class="counter text-primary" data-target="12000">0</h2>
+          <p>Live AI Interactions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <!-- Call-to-Action: Join the Future of AI-World -->
+<section id="cta" class="cta text-center py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-light">Step Into the Future with AI-Powered Worlds</h2>
+    <p class="lead text-light">Experience intelligent NPCs, AI-generated environments, and immersive interactions powered by artificial intelligence.</p>
+    
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="explore.html" class="btn btn-primary btn-lg">Explore AI-Worlds</a>
+      <a href="contact.html" class="btn btn-outline-light btn-lg">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+  
+</section>
+    
+    <section id="ai-testimonials" class="ai-testimonials section py-5 bg-dark text-light">
+      <div class="container" data-aos="fade-up">
+        <h3 class="text-center text-primary">What Users Say About AI-Worlds</h3>
+        
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4">
+            <div class="testimonial-card position-relative">
+              <img src="assets/img/user1.jpg" alt="AI User 1" class="img-fluid rounded">
+              <div class="testimonial-overlay">
+                <p>"The AI-powered NPCs feel so real! They learn, adapt, and make every experience unique." – Alex T.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Testimonial 2 -->
+          <div class="col-md-4">
+            <div class="testimonial-card position-relative">
+              <img src="assets/img/user2.jpg" alt="AI User 2" class="img-fluid rounded">
+              <div class="testimonial-overlay">
+                <p>"Exploring AI-generated environments is like stepping into a living, evolving world!" – Sarah M.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Testimonial 3 -->
+          <div class="col-md-4">
+            <div class="testimonial-card position-relative">
+              <img src="assets/img/user3.jpg" alt="AI User 3" class="img-fluid rounded">
+              <div class="testimonial-overlay">
+                <p>"AI avatars provide the most realistic social interactions I’ve ever experienced." – Jamie L.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    
+   
+    
+  </main>
+
+  <footer id="footer" class="footer py-4 bg-dark text-light text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Mentor. All Rights Reserved.</p>
+      <p>Designed by <a href="https://bootstrapmade.com/" class="text-light">BootstrapMade</a></p>
+    </div>
+    <p>Follow us on 
+      <a href="#" style="color: #00ffcc; text-decoration: none;">Facebook</a> | 
+      <a href="mailto:info@vrarwebsite.com" style="color: #00ffcc; text-decoration: none;">Twitter</a> | 
+      <a href="mailto:info@vrarwebsite.com" style="color: #00ffcc; text-decoration: none;">Instagram</a>
+    </p>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
